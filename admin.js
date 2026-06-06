@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  var APP_ID = 'scroll-to-top-app';
+  var APP_ID = 'custom-app-137010504-1';
 
   EcwidApp.init({
     app_id: APP_ID,
