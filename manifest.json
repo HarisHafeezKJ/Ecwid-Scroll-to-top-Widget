@@ -9,8 +9,8 @@
     "add_to_cp"
   ],
   "endpoints": {
-    "iframeUrl": "https://your-domain.com/admin.html",
-    "customJsUrl": "https://your-domain.com/storefront.js"
+    "iframeUrl": "https://cdn.jsdelivr.net/gh/HarisHafeezKJ/Ecwid-Scroll-to-top-Widget@main/admin.html",
+    "customJsUrl": "https://cdn.jsdelivr.net/gh/HarisHafeezKJ/Ecwid-Scroll-to-top-Widget@main/widget.js"
   },
   "publicConfigKeys": [
     "appEnabled",
