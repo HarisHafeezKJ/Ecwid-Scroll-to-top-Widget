@@ -1,0 +1,25 @@
+{
+  "name": "Scroll to Top",
+  "namespace": "scroll-to-top-app",
+  "description": "Adds a customizable scroll-to-top button with progress indicator to the Ecwid storefront.",
+  "version": "1.0.0",
+  "scopes": [
+    "read_store_profile",
+    "customize_storefront",
+    "add_to_cp"
+  ],
+  "endpoints": {
+    "iframeUrl": "https://your-domain.com/admin.html",
+    "customJsUrl": "https://your-domain.com/storefront.js"
+  },
+  "publicConfigKeys": [
+    "appEnabled",
+    "scrollThreshold",
+    "shape",
+    "buttonBackground",
+    "iconColor",
+    "progressBarColor",
+    "icon",
+    "progressBarEnabled"
+  ]
+}

@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scroll to Top</title>
+  <link rel="stylesheet" href="CssFw.css">
+  <link rel="stylesheet" href="https://d35z3p2poghz10.cloudfront.net/ecwid-sdk/css/1.3.19/ecwid-app-ui.css">
+  <link rel="stylesheet" href="admin.css">
+  <script src="https://d35z3p2poghz10.cloudfront.net/ecwid-sdk/js/1.3.0/ecwid-app.js"></script>
+</head>
+<body class="normalized">
+
+<div class="settings-page main">
+  <div class="settings-page__header">
+    <div class="settings-page__titles settings-page__titles--left">
+      <h1 class="settings-page__title">Scroll to Top</h1>
+      <div class="settings-page__subtitle">
+        Customize the scroll-to-top button shown on your storefront.
+      </div>
+    </div>
+  </div>
+
+  <div class="settings-page__section settings">
+    <div class="named-area">
+      <div class="named-area__header">
+        <div class="named-area__titles">
+          <h4 class="named-area__title h4">App status</h4>
+          <span class="named-area__subtitle">Enable or disable the button on your storefront</span>
+        </div>
+      </div>
+      <div class="named-area__body">
+        <div class="a-card a-card--compact">
+          <div class="a-card__paddings">
+            <div class="status-block">
+              <div class="status-block__central">
+                <div class="status-block__header">
+                  <span class="status-block__title">Scroll to Top button</span>
+                </div>
+                <div class="status-block__content">
+                  <p>When enabled, shoppers see a floating button after scrolling past your threshold.</p>
+                </div>
+              </div>
+              <div class="status-block__primary-action">
+                <label class="checkbox big">
+                  <input
+                    data-name="appEnabled"
+                    data-visibility="public"
+                    class="field__input"
+                    type="checkbox"
+                    checked>
+                  <div data-on="enabled" data-off="disabled"><div></div></div>
+                  <span class="checkbox__on-text-placeholder">enabled</span>
+                  <span class="checkbox__off-text-placeholder">disabled</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="named-area">
+      <div class="named-area__header">
+        <div class="named-area__titles">
+          <h4 class="named-area__title h4">Positioning</h4>
+          <span class="named-area__subtitle">Control when the button appears while scrolling</span>
+        </div>
+      </div>
+      <div class="named-area__body">
+        <div class="a-card a-card--normal">
+          <div class="a-card__paddings">
+            <div class="fieldset">
+              <div class="fieldset__title">Scroll threshold (%)</div>
+              <div class="field field--medium field--filled">
+                <label class="field__label">Scroll threshold</label>
+                <input
+                  data-name="scrollThreshold"
+                  data-visibility="public"
+                  type="number"
+                  class="field__input"
+                  min="0"
+                  max="100"
+                  step="1"
+                  value="25">
+                <div class="field__placeholder">25</div>
+              </div>
+              <div class="fieldset__note">
+                Button appears when scroll progress reaches this percentage of the page (0–100%).
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="named-area">
+      <div class="named-area__header">
+        <div class="named-area__titles">
+          <h4 class="named-area__title h4">Appearance</h4>
+          <span class="named-area__subtitle">Shape, colors, icon, and progress indicator</span>
+        </div>
+      </div>
+      <div class="named-area__body">
+        <div class="a-card a-card--normal">
+          <div class="a-card__paddings admin-grid">
+            <div class="fieldset fieldset--select">
+              <div class="fieldset__title">Shape</div>
+              <div class="field field--medium field--filled">
+                <select data-name="shape" data-visibility="public" class="field__select">
+                  <option value="circle">Circle</option>
+                  <option value="square">Square</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="fieldset">
+              <div class="fieldset__title">Button background</div>
+              <div class="color-field">
+                <input
+                  data-name="buttonBackground"
+                  data-visibility="public"
+                  data-color-sync="buttonBackground"
+                  type="color"
+                  value="#2563eb">
+                <input
+                  data-color-text="buttonBackground"
+                  type="text"
+                  class="field__input color-field__text"
+                  maxlength="7"
+                  value="#2563eb">
+              </div>
+            </div>
+
+            <div class="fieldset">
+              <div class="fieldset__title">Icon / text color</div>
+              <div class="color-field">
+                <input
+                  data-name="iconColor"
+                  data-visibility="public"
+                  data-color-sync="iconColor"
+                  type="color"
+                  value="#ffffff">
+                <input
+                  data-color-text="iconColor"
+                  type="text"
+                  class="field__input color-field__text"
+                  maxlength="7"
+                  value="#ffffff">
+              </div>
+            </div>
+
+            <div class="fieldset">
+              <div class="fieldset__title">Progress bar color</div>
+              <div class="color-field">
+                <input
+                  data-name="progressBarColor"
+                  data-visibility="public"
+                  data-color-sync="progressBarColor"
+                  type="color"
+                  value="#ffffff">
+                <input
+                  data-color-text="progressBarColor"
+                  type="text"
+                  class="field__input color-field__text"
+                  maxlength="7"
+                  value="#ffffff">
+              </div>
+            </div>
+
+            <div class="fieldset">
+              <div class="fieldset__title">Icon</div>
+              <div class="form-area__content">
+                <div class="radio">
+                  <label for="icon-arrow-up">
+                    <input
+                      data-name="icon"
+                      data-visibility="public"
+                      type="radio"
+                      name="icon"
+                      id="icon-arrow-up"
+                      value="arrow-up"
+                      checked>
+                    <span class="radio-label">
+                      <span class="gwt-InlineLabel">Arrow Up</span>
+                    </span>
+                  </label>
+                </div>
+                <div class="radio">
+                  <label for="icon-caret-up">
+                    <input
+                      data-name="icon"
+                      data-visibility="public"
+                      type="radio"
+                      name="icon"
+                      id="icon-caret-up"
+                      value="caret-up">
+                    <span class="radio-label">
+                      <span class="gwt-InlineLabel">Caret Up</span>
+                    </span>
+                  </label>
+                </div>
+                <div class="radio">
+                  <label for="icon-chevron-up">
+                    <input
+                      data-name="icon"
+                      data-visibility="public"
+                      type="radio"
+                      name="icon"
+                      id="icon-chevron-up"
+                      value="chevron-up">
+                    <span class="radio-label">
+                      <span class="gwt-InlineLabel">Chevron Up</span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="fieldset">
+              <div class="fieldset__title">Progress bar</div>
+              <label class="checkbox big">
+                <input
+                  data-name="progressBarEnabled"
+                  data-visibility="public"
+                  class="field__input"
+                  type="checkbox"
+                  checked>
+                <div data-on="enabled" data-off="disabled"><div></div></div>
+                <span class="checkbox__on-text-placeholder">enabled</span>
+                <span class="checkbox__off-text-placeholder">disabled</span>
+              </label>
+              <div class="fieldset__note">
+                Circular tracking for circle shape, linear border tracking for square shape.
+              </div>
+            </div>
+
+            <div class="fieldset preview-fieldset">
+              <div class="fieldset__title">Live preview</div>
+              <div id="scroll-top-preview" class="scroll-preview scroll-preview--circle scroll-preview--progress">
+                <span class="scroll-preview__ring"></span>
+                <span class="scroll-preview__icon"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://d35z3p2poghz10.cloudfront.net/ecwid-sdk/css/1.3.19/ecwid-app-ui.min.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
