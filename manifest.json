@@ -1,6 +1,6 @@
 {
   "name": "Scroll to Top",
-  "namespace": "scroll-to-top-app",
+  "namespace": "custom-app-137010504-1",
   "description": "Adds a customizable scroll-to-top button with progress indicator to the Ecwid storefront.",
   "version": "1.0.0",
   "scopes": [
